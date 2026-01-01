@@ -29,7 +29,6 @@ namespace CleanAuthTemplate.API.Controllers
         }
 
         [HttpPost("register")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
             var userExists = await _userManager.FindByEmailAsync(request.Email);
@@ -64,7 +63,6 @@ namespace CleanAuthTemplate.API.Controllers
         }
 
         [HttpPost("login")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
             var user = await _userManager.FindByEmailAsync(request.Email);
