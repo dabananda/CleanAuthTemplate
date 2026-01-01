@@ -74,7 +74,7 @@ try
         var services = scope.ServiceProvider;
         try
         {
-            await DbSeeder.SeedRolesAndUsersAsync(services);
+            await DbSeeder.SeedRolesAndAdminAsync(services);
         }
         catch (Exception ex)
         {
