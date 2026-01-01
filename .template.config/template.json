@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Dabananda Mitra",
+  "classifications": [ "Web", "API", "Clean Architecture" ],
+  "name": "Clean Architecture Auth Starter",
+  "identity": "Clean.Auth.Template.v1",
+  "shortName": "clean-auth",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "CleanAuthTemplate",
+  "preferNameDirectory": true
+}
