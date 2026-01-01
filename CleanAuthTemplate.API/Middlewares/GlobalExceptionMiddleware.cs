@@ -35,7 +35,7 @@ namespace CleanAuthTemplate.API.Middlewares
                     Errors = new List<string> { ex.Message }
                 };
 
-                await context.Response.WriteAsJsonAsync(JsonSerializer.Serialize(response));
+                await context.Response.WriteAsJsonAsync(response);
             }
         }
     }
