@@ -39,7 +39,7 @@ namespace CleanAuthTemplate.Infrastructure.Services
                 issuer: _config["JwtSettings:Issuer"],
                 audience: _config["JwtSettings:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(double.Parse(_config["JwtSettings:DurationInMinutes"])),
+                expires: DateTime.UtcNow.AddMinutes(double.Parse(_config["JwtSettings:DurationInMinutes"])),
                 signingCredentials: creds
             );
 

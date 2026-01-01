@@ -20,7 +20,7 @@ namespace CleanAuthTemplate.Infrastructure.Services
             email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = body };
 
             using var smtp = new SmtpClient();
-            await smtp.ConnectAsync(_config["EmailSettings:SmtpServer"], int.Parse(_config["EmailSettings:Port"]), MailKit.Security.SecureSocketOptions.StartTls);
+            await smtp.ConnectAsync(_config["EmailSettings:SmtpServer"], _config.GetValue<int>("EmailSettings:SmtpPort"), MailKit.Security.SecureSocketOptions.StartTls);
             await smtp.AuthenticateAsync(_config["EmailSettings:Username"], _config["EmailSettings:Password"]);
 
             await smtp.SendAsync(email);
