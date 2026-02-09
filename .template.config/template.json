@@ -10,5 +10,5 @@
     "type": "solution"
   },
   "sourceName": "CleanAuthTemplate",
-  "preferNameDirectory": true
+  "preferNameDirectory": false
 }
