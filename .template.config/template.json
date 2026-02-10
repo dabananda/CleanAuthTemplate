@@ -2,36 +2,13 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Dabananda Mitra",
   "classifications": [ "Web", "API", "Clean Architecture" ],
-  "name": "Clean Architecture Starter",
-  "identity": "Clean.Architecture.Starter.v1",
-  "shortName": "clean-arch",
+  "name": "Clean Architecture Auth Template",
+  "identity": "CleanAuthTemplate.Web.CSharp",
+  "shortName": "cleanauth",
   "tags": {
     "language": "C#",
-    "type": "solution"
+    "type": "project"
   },
   "sourceName": "CleanAuthTemplate",
-  "preferNameDirectory": true,
-  "symbols": {
-    "AdminEmail": {
-      "type": "parameter",
-      "datatype": "string",
-      "replaces": "admin@email.com",
-      "defaultValue": "admin@email.com"
-    },
-    "AdminPassword": {
-      "type": "parameter",
-      "datatype": "string",
-      "replaces": "Pass@123",
-      "defaultValue": "Pass@123"
-    }
-  },
-  "sources": [
-    {
-      "modifiers": [
-        {
-          "exclude": [ "**/[Bb]in/**", "**/[Oo]bj/**", "**/.vs/**", "Logs/**" ]
-        }
-      ]
-    }
-  ]
+  "preferNameDirectory": true
 }
